@@ -15,8 +15,12 @@ function toggledark(){
 	if(location.search.substring(1).split("&").includes("dark-mode=true")){
 		window.location.href = window.location.href.replace("?dark-mode=true", "")
 	}else{
+		if(location.search.substring(1).split("&")!=""){
+			window.location.href = window.location.href.replace(location.search, "") + "?dark-mode=true"
+			}else{	
 		window.location.href = window.location.href + "/?dark-mode=true"
 	}
+}
 }
 }
 
