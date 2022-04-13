@@ -18,9 +18,9 @@ function callToCV (){
 
 function callToIndex (){
 	if(darkMode){
-	window.location.href = "home.html?dark-mode=true";
+	window.location.href = "index.html?dark-mode=true";
 	}else{
-	window.location.href = "home.html";
+	window.location.href = "index.html";
 	}
 }
 
