@@ -1,6 +1,7 @@
 var darkMode;
 
 function toggledark(){
+	if(window.location.href.includes("html")){
 	if(location.search.substring(1).split("&").includes("dark-mode=true")){
 	window.location.href = window.location.href.replace(".html?dark-mode=true", ".html")
 	}else{
@@ -9,6 +10,13 @@ function toggledark(){
 		}else{
 		window.location.href = window.location.href.replace(".html", ".html?dark-mode=" + "true")
 }
+}
+}else{
+	if(location.search.substring(1).split("&").includes("dark-mode=true")){
+		window.location.href = window.location.href.replace("?dark-mode=true", "")
+	}else{
+		window.location.href = window.location.href + "/?dark-mode=true"
+	}
 }
 }
 
