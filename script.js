@@ -10,9 +10,9 @@ function toggledark(){
 
 function callToCV (){
 	if(darkMode){
-	window.location.href = "CV.html?dark-mode=true";
+	window.location.href = "cv.html?dark-mode=true";
 	}else{
-	window.location.href = "CV.html";
+	window.location.href = "cv.html";
 	}
 }
 
