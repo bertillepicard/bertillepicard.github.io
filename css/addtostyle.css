@@ -1,0 +1,24 @@
+ion-icon {
+    color: rgb(238, 238, 241);
+  }
+  
+body{
+  --collink: #0062c5;
+  --colhlght: #a73421;
+
+}
+
+.dark{
+    --collink: #569cd6;
+    --colhlght: #de935f;
+}
+
+a:visited {color: var(--collink)} 
+a:hover {color: var(--collink)}
+a:active {color: var(--collink)}
+
+h1 {
+	color: var(--colhlght);
+	font-weight: bold;
+}
+
