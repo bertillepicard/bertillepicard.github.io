@@ -4,8 +4,12 @@ function toggledark(){
 	if(location.search.substring(1).split("&").includes("dark-mode=true")){
 	window.location.href = window.location.href.replace(".html?dark-mode=true", ".html")
 	}else{
-	window.location.href = window.location.href.replace(".html", ".html?dark-mode=" + "true")
-	}		
+		if(".html" + location.search.substring(1).split("&")!=""){
+		window.location.href = window.location.href.replace(".html?" + location.search.substring(1).split("&"), ".html?dark-mode=" + "true")
+		}else{
+		window.location.href = window.location.href.replace(".html", ".html?dark-mode=" + "true")
+}
+}
 }
 
 function callToCV (){
