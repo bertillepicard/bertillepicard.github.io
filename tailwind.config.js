@@ -15,7 +15,7 @@ module.exports = {
     extend: {
       colors: {
         'fondnavcolor':'#2b4b6f',
-        'ongletcolor': '#d2d2d2',
+        'ongletcolor': 'var(--ongletcolor)',
         'bckglight': '#f8f8f8',
         'bckgdark': '#1d1f21',
         'fondcarddark': '#2b2d2f',

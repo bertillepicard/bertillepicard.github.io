@@ -6,13 +6,16 @@ body{
   --collink: #0062c5;
   --colhover: #6f8bdc;
   --colhlght: #a73421;
-
+  --ongletcolor: #d2d2d2;
+  --maincolor: #000000;
 }
 
 .dark{
     --collink: #569cd6;
     --colhover: #6ab1db;
     --colhlght: #de935f;
+    --ongletcolor: #d2d2d2;
+    --maincolor: #d2d2d2;
 }
 
 a:link {color: var(--collink);}
@@ -23,3 +26,11 @@ h1 {
 	color: var(--colhlght);
 	font-weight: bold;
 }
+
+.socnetw{
+
+}
+
+a.socnetw:link {color: var(--maincolor);}
+a.socnetw:visited {color: var(--maincolor);}
+a.socnetw:hover, a.socnetw:focus, a.socnetw:active {color: var(--colhover);}
