@@ -4,21 +4,22 @@ ion-icon {
   
 body{
   --collink: #0062c5;
+  --colhover: #6f8bdc;
   --colhlght: #a73421;
 
 }
 
 .dark{
     --collink: #569cd6;
+    --colhover: #6ab1db;
     --colhlght: #de935f;
 }
 
-a:visited {color: var(--collink)} 
-a:hover {color: var(--collink)}
-a:active {color: var(--collink)}
+a:link {color: var(--collink);}
+a:visited {color: var(--collink);}
+a:hover, a:focus, a:active {color: var(--colhover);}
 
 h1 {
 	color: var(--colhlght);
 	font-weight: bold;
 }
-
