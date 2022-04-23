@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="css/addtostyle.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.js"></script>
 </head>
 <body class="antialiased place-items-center">
     <div :class="{'dark': darkMode === true} ">
@@ -145,6 +146,5 @@
       e.name === 'menu' ? (e.name = "close",list.classList.remove('hidden')) :( e.name = "menu" ,list.classList.add('hidden'))
     }
   </script>
-    <script src="/node_modules/flowbite/dist/flowbite.js"></script>
 </body>
 </html>
