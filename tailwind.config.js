@@ -7,7 +7,7 @@ module.exports = {
     './*.html'
   ],
   darkMode: 'class',
-  content: ["./index.html"],
+  content: ["./index.html",  "./node_modules/flowbite/**/*.js"],
   theme: {
     screens: {
       ...defautTheme.screens,
@@ -26,6 +26,6 @@ module.exports = {
   },
   corePlugins: {
   },
-  plugins: [
+  plugins: [require('flowbite/plugin')
   ],
 }
