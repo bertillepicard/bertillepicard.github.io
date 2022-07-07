@@ -1,13 +1,13 @@
 const colors = require('tailwindcss/colors')
 const defautTheme = require('tailwindcss/defaultTheme')
 
-module.exports = {  
+module.exports = {
   mode: 'jit',
   purge: [
     './*.html'
   ],
   darkMode: 'class',
-  content: ["./index.html", './src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js', "./node_modules/flowbite/**/*.js"],
+  content: ["./index.html"],
   theme: {
     screens: {
       ...defautTheme.screens,
@@ -21,19 +21,11 @@ module.exports = {
         'fondcarddark': '#2b2d2f',
         'darkshadowcard': '#47494b',
         'collink': 'var(--collink)',
-        'colhover': 'var(--colhover)',
       }
-    },
-  },
-  variants: {
-    extend: {
-      visibility: ["group-hover"],
     },
   },
   corePlugins: {
   },
   plugins: [
-    require('flowbite/plugin'),
-    require('tw-elements/dist/plugin')
-  ]
+  ],
 }
