@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+        <title>Bertille Picard</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/addtostyle.css">
+    <link rel="stylesheet" href="dist/accordion.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="antialiased place-items-center">
+    <div :class="{'dark': darkMode === true} ">
+        <div class = "min-h-screen dark:bg-bckgdark bg-bckglight"> 
+            <nav class="p-5 shadow-xl bg-fondnavcolor md:flex md:items-center md:justify-between">
+        <div class="flex items-center justify-between ">
+            <button onclick="callToIndex();" class="text-2xl md:text-2xl lg:text-3xl font-[Poppins] text-ongletcolor visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100 duration-500"> Bertille Picard </button>
+            <span class="block mx-2 text-3xl cursor-pointer md:hidden">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+        </div>
+        
+        <ul class="hidden md:flex text-ongletcolor md:items-center z-[-1] md:z-auto md:static w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity- top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <button onclick="callToIndex();" class="text-xl duration-500 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100"> Home </button>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <button onclick="callToResearch();" class="text-xl duration-500 text-ongletcolor visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100"> Research </button>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <button onclick="callToTeaching();" class="text-xl duration-500 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100"> Teaching </button>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <button onclick="callToCV();" class="text-xl duration-500 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100"> CV </button>
+            </li>
+            <li><button class="mx-4 text-xl duration-500 md:px-10 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100" onclick="toggledark();"><i class="fas fa-adjust"></i></button></li>
+        </ul>
+    </nav>
+    <div class="">
+
+        <div class="grid grid-cols-9 md:px-20 md:py-4 lg:px-60 min-h-fit dark:text-ongletcolor lg:text-lg">
+            <div class="col-start-1 col-end-10 p-4">
+        </div>
+            <div class="col-start-1 col-end-10 p-4 md:col-start-2">
+                These graphs are intended to illustrate different concepts. They can be customized. If you want to re-use and personalize the desmos graphs, you can click on "edit graph on desmos".
+                <br><br>
+                <h1 class="text-xl lg:text-3xl" id="probability">Probability Theory</h1><br>
+                <div class="accordion-container1">
+                    <div class="bg-white ac dark:bg-fondcarddark">
+                        <h2 class="ac-header">
+                          <button type="button" class="ac-trigger">Uniform distribution</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/soxu20rsls?">Edit Graph on Desmos</a>. </p>
+                            <iframe src="https://www.desmos.com/calculator/soxu20rsls?embed" width="100%" height="500"  frameborder=0></iframe> <br>
+                        </div>
+                    </div>
+                    <div class="bg-white ac dark:bg-fondcarddark">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Normal distribution</button>
+                          </h2>
+                          <div class="ac-panel">
+                            <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/mqoh2l6yng?">Edit Graph on Desmos</a>. </p>
+                            <iframe src="https://www.desmos.com/calculator/mqoh2l6yng?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                            <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/fnyaddlio1?">Edit Graph on Desmos</a>. </p>
+                            <iframe src="https://www.desmos.com/calculator/fnyaddlio1?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                        </div>
+                    </div>
+                    <div class="bg-white ac dark:bg-fondcarddark">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Exponential distribution</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/4n6lcmeov3?">Edit Graph on Desmos</a>. </p>
+                            <iframe src="https://www.desmos.com/calculator/4n6lcmeov3?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                        </div>
+                    </div>
+
+                            
+                    </div>
+                    <br><br>
+                    <h1 class="text-xl lg:text-3xl" id="econometrics">Introductory Econometrics</h1><br>
+                    <div class="accordion-container2">
+    
+                    <div class="bg-white ac dark:bg-fondcarddark">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Linear Model</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/7f6hrhpv8x?">Edit Graph on Desmos</a>. </p>
+                            <iframe src="https://www.desmos.com/calculator/7f6hrhpv8x?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                        </div>
+                    </div>
+
+                    <div class="bg-white ac dark:bg-fondcarddark">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Student Test</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/citni5wqdz?">Edit Graph on Desmos</a>. </p>
+                            <iframe src="https://www.desmos.com/calculator/citni5wqdz?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                        </div>
+                    </div>
+
+                    <div class="bg-white ac dark:bg-fondcarddark">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Fisher Test</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/7tkug6uznw?">Edit Graph on Desmos</a>. </p>
+                            <iframe src="https://www.desmos.com/calculator/7tkug6uznw?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <br><br>
+                <h1 class="text-xl lg:text-3xl" id="mathematics">Mathematics</h1><br>
+                <div class="accordion-container3">
+
+                <div class="bg-white ac dark:bg-fondcarddark">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger">Square function</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/qlizdipilw?">Edit Graph on Desmos</a>. </p>
+                        <iframe src="https://www.desmos.com/calculator/qlizdipilw?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                    </div>
+                </div>
+
+                <div class="bg-white ac dark:bg-fondcarddark">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger">Convexity and concavity</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/dtuz7e375c?">Edit Graph on Desmos</a>. </p>
+                        <iframe src="https://www.desmos.com/calculator/dtuz7e375c?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                    </div>
+                </div>
+
+                <div class="bg-white ac dark:bg-fondcarddark">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger">Integrals</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/g8xzy9n9hm?">Edit Graph on Desmos</a>. </p>
+                            <iframe src="https://www.desmos.com/calculator/g8xzy9n9hm?embed" width="100%" height="500" frameborder=0></iframe> <br>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="scriptPostDoc.js"></script>
+<script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.remove('hidden')) :( e.name = "menu" ,list.classList.add('hidden'))
+    }
+  </script>
+    <script src="dist/accordion.js"></script>
+
+    <script>
+      new Accordion('.accordion-container1');
+      new Accordion('.accordion-container2');
+      new Accordion('.accordion-container3');
+    </script>
+    <!-- More about accordion here: https://michu2k.github.io/Accordion/ -->
+  
+    </body>
+</html>

@@ -56,3 +56,27 @@ function callToTeaching (){
 	}
 }
 
+function callToTeachingVisualsProbability (){
+	if(darkMode){
+	window.location.href = "teaching_visuals.html?dark-mode=true#probability";
+	}else{
+	window.location.href = "teaching_visuals.html#probability";
+	}
+}
+
+
+function callToTeachingVisualsEconometrics (){
+	if(darkMode){
+	window.location.href = "teaching_visuals.html?dark-mode=true#econometrics";
+	}else{
+	window.location.href = "teaching_visuals.html#econometrics";
+	}
+}
+
+function callToTeachingVisualsMathematics (){
+	if(darkMode){
+	window.location.href = "teaching_visuals.html?dark-mode=true#mathematics";
+	}else{
+	window.location.href = "teaching_visuals.html#mathematics";
+	}
+}
