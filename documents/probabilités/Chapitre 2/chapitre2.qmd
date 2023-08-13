@@ -1,0 +1,476 @@
+---
+title: "Probabilités 1"
+subtitle: ""
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: "Bertille Picard"
+    theme: serif #simple
+    fontsize: 16pt
+---
+
+# Chapitre 2
+
+## Ω infini non dénombrable
+::: slide
+![](cible/cible1.svg){width=60% fig-align="center"}
+:::
+
+## Ω infini non dénombrable
+::: slide
+![](cible/cible2.svg){width=60% fig-align="center"}
+:::
+
+## Ω infini non dénombrable
+::: slide
+![](cible/cible3.svg){width=60% fig-align="center"}
+:::
+
+## Ω infini non dénombrable
+::: slide
+![](cible/cible4.svg){width=60% fig-align="center"}
+:::
+
+## Ω infini non dénombrable
+::: slide
+![](cible/cible5.svg){width=60% fig-align="center"}
+:::
+
+## Ω infini non dénombrable
+::: slide
+![](cible/cible6.svg){width=60% fig-align="center"}
+:::
+
+## Ω infini non dénombrable
+::: slide
+![](cible/cible7.svg){width=60% fig-align="center"}
+
+$(x,y)\in \mathbb{R}^2$
+:::
+
+## Probabilité du complémentaire
+::: slide
+<br><br>
+![](complémentaire/comp1.svg){width=80% fig-align="center"}
+:::
+
+## Probabilité du complémentaire
+::: slide
+<br><br>
+![](complémentaire/comp2.svg){width=80% fig-align="center"}
+:::
+
+## Probabilité du complémentaire
+::: slide
+<br><br>
+![](complémentaire/comp3.svg){width=80% fig-align="center"}
+:::
+
+## Probabilité du complémentaire
+::: slide
+<br><br>
+![](complémentaire/comp4.svg){width=80% fig-align="center"}
+:::
+
+## Inclusion
+::: slide
+<br><br>
+![](inclusion/inclusion1_animated.svg){width=80% fig-align="center"}
+:::
+
+## Inclusion
+::: slide
+<br><br>
+![](inclusion/inclusion2_animated.svg){width=80% fig-align="center"}
+:::
+
+## Inclusion
+::: slide
+<br><br>
+![](inclusion/inclusion3_animated.svg){width=80% fig-align="center"}
+:::
+
+## Inclusion
+::: slide
+<br><br>
+![](inclusion/inclusion4_animated.svg){width=80% fig-align="center"}
+:::
+
+## Inclusion
+::: slide
+<br><br>
+![](inclusion/inclusion5_animated.svg){width=80% fig-align="center"}
+:::
+
+## Inclusion
+::: slide
+<br><br>
+![](inclusion/inclusion6_animated.svg){width=80% fig-align="center"}
+:::
+
+## Inclusion
+::: slide
+<br><br>
+![](inclusion/inclusion5.png){width=80% fig-align="center"}
+:::
+
+## Intersection
+::: slide
+![](images/i1_animated.svg)
+:::
+
+## Intersection
+::: slide
+![](images/i2_animated.svg)
+:::
+
+## Intersection
+::: slide
+![](images/i3_animated.svg)
+:::
+
+## Intersection
+::: slide
+![](images/i4_animated.svg)
+:::
+
+## Décomposer $(A_n)$ croissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitecroissante1.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ croissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitecroissante2.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ croissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitecroissante3.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ croissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitecroissante4.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ croissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitecroissante5.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ croissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitecroissante6.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ croissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitecroissante7.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ décroissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitedécroissante1.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ décroissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitedécroissante2.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ décroissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitedécroissante3.png){width=60% fig-align="center"}
+:::
+
+## Décomposer $(A_n)$ décroissante en réunion disjointe
+::: slide
+<br><br>
+![](ensembles/suitedécroissante4.png){width=60% fig-align="center"}
+:::
+
+
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)- \mathbb{P}(A\cap C) + \mathbb{P}(A\cap B\cap C)$
+![](images/c1_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \text{ ...}$
+![](images/c2_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \text{ ...}$
+![](images/c3_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \text{ ...}$
+![](images/c4_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \text{ ...}$
+![](images/c5_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \text{ ...}$
+![](images/c6_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \text{ ...}$
+![](images/c7_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \text{ ...}$
+![](images/c9_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) \text{ ...}$
+![](images/c10_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \text{ ...}$
+![](images/c11_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \text{ ...}$
+![](images/c12_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \text{ ...}$
+![](images/c13_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) \text{ ...}$
+![](images/c14_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) \text{ ...}$
+![](images/c15_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)\text{ ...}$
+![](images/c16_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)\text{ ...}$
+![](images/c17_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)- \mathbb{P}(A\cap C)\text{ ...}$
+![](images/c18_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)- \mathbb{P}(A\cap C)\text{ ...}$
+![](images/c19_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)- \mathbb{P}(A\cap C)\text{ ...}$
+![](images/c19css.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)- \mathbb{P}(A\cap C) +\text{ ...}$
+![](images/c22_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)- \mathbb{P}(A\cap C) + \mathbb{P}(A\cap B\cap C)$
+![](images/c23_animated.svg)
+:::
+
+## Formule du crible
+::: slide
+$\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A\cap B) - \mathbb{P}(B\cap C)- \mathbb{P}(A\cap C) + \mathbb{P}(A\cap B\cap C)$
+![](images/c24_animated.svg)
+:::
+
+## Probabilité de l'union
+<br><br>
+
+::: slide
+![](ensembles/probaunion1.png){width=60% fig-align="center"}
+:::
+
+## Probabilité de l'union
+<br><br>
+
+::: slide
+![](ensembles/probaunion2.png){width=60% fig-align="center"}
+:::
+
+## Probabilité de l'union
+<br><br>
+
+::: slide
+![](ensembles/probaunion3.png){width=60% fig-align="center"}
+:::
+
+## Probabilité de l'union
+<br><br>
+
+::: slide
+![](ensembles/probaunion4.png){width=60% fig-align="center"}
+:::
+
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés1.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés2.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés3.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés4.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés5.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés6.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés7.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés8.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés9.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés10.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés11.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés12.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés13.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés14.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés15.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés16.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés17.png){width=60% fig-align="center"}
+:::
+
+## Probabilités conditionnelles
+
+::: slide
+![](2dés/2dés18.png){width=60% fig-align="center"}
+:::

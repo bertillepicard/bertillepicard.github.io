@@ -1,0 +1,54 @@
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.border-thick {
+  border-width: 3px;
+}
+
+.small {
+  font-size: 80%;
+}
+
+.tiny {
+  font-size: 50%;
+}
+
+.custom-box {
+  padding: 10px;
+  border: 10px solid #2780e3;
+  width: 500px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.custom-box-big {
+  padding: 40px;
+  border: 10px solid #2780e3;
+  width: 100%;
+  height: 90%;
+  margin: 100px;
+  display: flex;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+
+li:nth-child(even)::marker {
+  content: "";
+}
+li:nth-child(odd)::marker {
+  content: "";
+}
+
+.centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

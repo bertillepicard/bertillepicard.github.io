@@ -1,0 +1,244 @@
+---
+title: "Probabilités 1"
+subtitle: "Chapitre 1"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: "Bertille Picard"
+    theme: serif #simple
+    fontsize: 22pt
+bibliography: references.bib
+---
+
+# Chapitre 1 : Dénombrement
+
+
+::: slide
+
+## Un jeu de 52 cartes
+
+![Source: [Pixabay](https://pixabay.com/vectors/atlasnye-deck-playing-cards-game-884206/)](dénombrement/deck52cartes.png)
+
+:::
+
+::: slide
+
+## Une main de 6 cartes
+
+![Source: [Pixabay](https://pixabay.com/vectors/atlasnye-deck-playing-cards-game-884206/)](dénombrement/main6cartes1.png)
+
+:::
+
+::: slide
+
+## Question 3
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/6311bbfaad7a895e81f0478a width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+::: slide
+
+## Question 4
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/6311bbfaad7a895e81f0478b width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+::: slide
+
+## Question 5
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/6311bbfaad7a895e81f0478e width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+::: slide
+
+## Question 6
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/6311bbfaad7a895e81f0478c width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+::: slide
+
+## Question 7
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/6311bbfaad7a895e81f04793 width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+::: slide
+
+## Question 8
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/6311bbfaad7a895e81f0478d width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+::: slide
+
+## Tirage avec remise
+
+![](dénombrement/tirageremise.png)
+
+::: 
+
+
+::: slide
+
+## Arrangements
+
+Quand on compte les arrangements, l'ordre de tirage importe !
+
+![](dénombrement/arrangement.png)
+
+:::
+
+
+::: slide
+
+## Question 9
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/6311bbfaad7a895e81f04798 width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+
+
+::: slide
+
+## Tirage sans remise
+
+![](dénombrement/tiragesansremise.png)
+
+:::
+
+::: slide
+
+## Question 10
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/631370733b2908644dfc08e2 width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+::: slide
+
+## Application injective
+::: {.small}
+- Une **application** est une relation entre deux ensembles telle que chaque élément de l'ensemble de départ est relié à un unique élément de l’ensemble d'arrivée.
+- Une application f est dite **injective** si tout élément de son ensemble d'arrivée a au plus un antécédent par f. Autrement dit, si deux éléments de l'ensemble de départ sont distincts, ils ne peuvent pas avoir la même image.
+
+:::
+
+![](dénombrement/finjective.png)
+
+:::
+
+::: slide
+
+## Permutations de 3 éléments
+
+![](dénombrement/permutations3elements.png)
+
+:::
+
+::: slide
+
+## Combinaisons
+
+Quand on compte les combinaisons, l'ordre de tirage n'importe pas !
+
+![](dénombrement/combinaison.png)
+
+:::
+
+
+::: slide
+
+## Question 11
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/631372383b2908644dfc0ee6 width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+
+
+::: slide
+
+## Illustration de $\varphi$
+
+![](dénombrement/phidef.png)
+
+:::
+
+::: slide
+
+## Le triangle de Pascal
+
+![](dénombrement/trianglepascal1.png)
+
+:::
+
+::: slide
+
+## Le triangle de Pascal
+
+![](dénombrement/trianglepascal2.png)
+
+:::
+
+::: slide
+
+## Le triangle de Pascal
+
+![](dénombrement/trianglepascal3.png)
+
+:::
+
+::: slide
+
+## Le triangle de Pascal
+
+![](dénombrement/trianglepascal4.png)
+
+:::
+
+::: slide
+
+## Question 12
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/64d232b6f0abfbe0cfa16f5f width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+
+::: slide
+
+## Le triangle de Pascal
+
+![](dénombrement/trianglepascal5.png)
+
+:::
+
+::: slide
+
+## Question 13
+
+<iframe src=https://app.wooclap.com/events/YGKSIT/questions/6313728c3b2908644dfc0fbd width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+::: slide
+
+## Combinaisons avec remise
+
+![](dénombrement/combinaisonsavecremise.png)
+
+:::
+
