@@ -61,3 +61,38 @@ a.socnetw:hover, a.socnetw:focus, a.socnetw:active {color: var(--colhover);}
 .pb-4 {
   padding-bottom: 10rem;
 }
+
+.iframe{
+  position: relative;
+}
+
+
+.onlyOnLargeScreen{
+  display: none;
+}
+
+.onlyOnMobileAndTablet{
+  display: none;
+}
+
+.bandeau {
+}
+
+.bouton-toggle {
+  cursor: pointer;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contenu-toggle {
+  max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+
+.fleche {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
