@@ -149,7 +149,14 @@ integralsButton.addEventListener('click', () => {
 
 
 function createuniformDistributionGraph() {
-    <script type="text/javascript" src="graphs/uniform.js"></script>
+// Créez une balise script
+const scriptElement = document.createElement('script');
+
+// Spécifiez l'URL du fichier JavaScript externe
+scriptElement.src = 'uniform.js';
+
+// Ajoutez la balise script au document
+document.head.appendChild(scriptElement);
 }
 
 function removeuniformDistributionGraph() {
@@ -161,7 +168,7 @@ function removeuniformDistributionGraph() {
 }
 
 function createnormalDistributionGraph() {
-    <script type="text/javascript" src="graphs/normal.js"></script>
+    <script type="text/javascript" src="normal.js"></script>
 }
 
 function removenormalDistributionGraph() {
@@ -173,7 +180,7 @@ function removenormalDistributionGraph() {
 }
 
 function createnormalSEDistributionGraph() {
-    <script type="text/javascript" src="graphs/normalSE.js"></script>
+    <script type="text/javascript" src="normalSE.js"></script>
 }
 
 function removenormalSEDistributionGraph() {
@@ -185,7 +192,7 @@ function removenormalSEDistributionGraph() {
 }
 
 function createexponentialDistributionGraph() {
-    <script type="text/javascript" src="graphs/exponential.js"></script>
+    <script type="text/javascript" src="exponential.js"></script>
 }
 
 function removeexponentialDistributionGraph() {
@@ -197,7 +204,7 @@ function removeexponentialDistributionGraph() {
 }
 
 function createlinearDistributionGraph() {
-    <script type="text/javascript" src="graphs/linear.js"></script>
+    <script type="text/javascript" src="linear.js"></script>
 }
 
 function removelinearDistributionGraph() {
@@ -209,7 +216,7 @@ function removelinearDistributionGraph() {
 }
 
 function createlinearsimpleDistributionGraph() {
-    <script type="text/javascript" src="graphs/linregsimple.js"></script>
+    <script type="text/javascript" src="linregsimple.js"></script>
 }
 
 function removelinearsimpleDistributionGraph() {
@@ -221,7 +228,7 @@ function removelinearsimpleDistributionGraph() {
 }
 
 function createstudentDistributionGraph() {
-    <script type="text/javascript" src="graphs/student.js"></script>
+    <script type="text/javascript" src="student.js"></script>
 }
 
 function removestudentDistributionGraph() {
@@ -233,7 +240,7 @@ function removestudentDistributionGraph() {
 }
 
 function createfisherDistributionGraph() {
-    <script type="text/javascript" src="graphs/fisher.js"></script>
+    <script type="text/javascript" src="fisher.js"></script>
 }
 
 function removefisherDistributionGraph() {
@@ -245,7 +252,7 @@ function removefisherDistributionGraph() {
 }
 
 function createsquareDistributionGraph() {
-    <script type="text/javascript" src="graphs/squarefunction.js"></script>
+    <script type="text/javascript" src="squarefunction.js"></script>
 }
 
 function removesquareDistributionGraph() {
@@ -257,7 +264,7 @@ function removesquareDistributionGraph() {
 }
 
 function createconvexityDistributionGraph() {
-    <script type="text/javascript" src="graphs/convexity.js"></script>
+    <script type="text/javascript" src="convexity.js"></script>
 }
 
 function removeconvexityDistributionGraph() {
@@ -269,7 +276,7 @@ function removeconvexityDistributionGraph() {
 }
 
 function createintegralsDistributionGraph() {
-    <script type="text/javascript" src="graphs/integral.js"></script>
+    <script type="text/javascript" src="integral.js"></script>
 }
 
 function removeintegralsDistributionGraph() {
