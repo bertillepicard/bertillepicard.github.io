@@ -54,17 +54,18 @@
                 <div class="accordion-container1">
                     <div class="bg-white ac dark:bg-fondcarddark">
                         <h2 class="ac-header">
-                          <button type="button" class="ac-trigger">Uniform distribution</button>
+                          <button type="button" class="ac-trigger" graph="uniform">Uniform distribution</button>
                         </h2>
                         <div class="ac-panel">
                             <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/soxu20rsls?">Edit Graph on Desmos</a>.
-                            <div class="onlyOnMobileAndTablet"><div id="calculator-unif" style="width: 600px; height: 400px;"></div></div>
+                            <div class="onlyOnMobileAndTablet">
+                            <div id="calculator-unif" style="width: 600px; height: 400px;"></div></div>
                             <div class="onlyOnLargeScreen"><iframe src="https://www.desmos.com/calculator/soxu20rsls?embed" width="100%" height="500" frameborder=0></iframe> </div> <br></p>
                         </div>
                     </div>
                     <div class="bg-white ac dark:bg-fondcarddark">
                         <h2 class="ac-header">
-                            <button type="button" class="ac-trigger">Normal distribution</button>
+                            <button type="button" class="ac-trigger" graph="normal">Normal distribution</button>
                           </h2>
                           <div class="ac-panel">
                             <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/mqoh2l6yng?">Edit Graph on Desmos</a>. </p>
@@ -77,7 +78,7 @@
                     </div>
                     <div class="bg-white ac dark:bg-fondcarddark">
                         <h2 class="ac-header">
-                            <button type="button" class="ac-trigger">Exponential distribution</button>
+                            <button type="button" class="ac-trigger" graph="exponential">Exponential distribution</button>
                         </h2>
                         <div class="ac-panel">
                             <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/4n6lcmeov3?">Edit Graph on Desmos</a>. </p>
@@ -94,7 +95,7 @@
     
                     <div class="bg-white ac dark:bg-fondcarddark">
                         <h2 class="ac-header">
-                            <button type="button" class="ac-trigger">Linear Model</button>
+                            <button type="button" class="ac-trigger" graph="linear">Linear Model</button>
                         </h2>
                         <div class="ac-panel">
                             <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/7f6hrhpv8x?">Edit Graph on Desmos</a>. </p>
@@ -108,7 +109,7 @@
 
                     <div class="bg-white ac dark:bg-fondcarddark">
                         <h2 class="ac-header">
-                            <button type="button" class="ac-trigger">Student Test</button>
+                            <button type="button" class="ac-trigger" graph="student">Student Test</button>
                         </h2>
                         <div class="ac-panel">
                             <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/citni5wqdz?">Edit Graph on Desmos</a>. </p>
@@ -119,7 +120,7 @@
 
                     <div class="bg-white ac dark:bg-fondcarddark">
                         <h2 class="ac-header">
-                            <button type="button" class="ac-trigger">Fisher Test</button>
+                            <button type="button" class="ac-trigger" graph="fisher">Fisher Test</button>
                         </h2>
                         <div class="ac-panel">
                             <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/7tkug6uznw?">Edit Graph on Desmos</a>. </p>
@@ -137,7 +138,7 @@
 
                 <div class="bg-white ac dark:bg-fondcarddark">
                     <h2 class="ac-header">
-                        <button type="button" class="ac-trigger">Square function</button>
+                        <button type="button" class="ac-trigger" graph="square">Square function</button>
                     </h2>
                     <div class="ac-panel">
                         <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/qlizdipilw?">Edit Graph on Desmos</a>. </p>
@@ -148,7 +149,7 @@
 
                 <div class="bg-white ac dark:bg-fondcarddark">
                     <h2 class="ac-header">
-                        <button type="button" class="ac-trigger">Convexity and concavity</button>
+                        <button type="button" class="ac-trigger" graph="convexity">Convexity and concavity</button>
                     </h2>
                     <div class="ac-panel">
                         <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/dtuz7e375c?">Edit Graph on Desmos</a>. </p>
@@ -159,7 +160,7 @@
 
                 <div class="bg-white ac dark:bg-fondcarddark">
                     <h2 class="ac-header">
-                        <button type="button" class="ac-trigger">Integrals</button>
+                        <button type="button" class="ac-trigger" graph="integrals">Integrals</button>
                     </h2>
                     <div class="ac-panel">
                         <p class="ac-text"> If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/g8xzy9n9hm?">Edit Graph on Desmos</a>. </p>
@@ -255,7 +256,8 @@ if(window.matchMedia("(max-width: 350px)").matches){
 <script type="text/javascript" src="graphs/normalSE.js"></script>
 <script type="text/javascript" src="graphs/exponential.js"></script>
 
-    <!-- const desmosfontSize = window.getComputedStyle(document.body, null).getPropertyValue('font-size') || '16px' -->
+<script type="text/javascript" src="graphs/createandremovegraphs.js"></script>
 
+    
     </body>
 </html>
