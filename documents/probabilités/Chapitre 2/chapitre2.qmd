@@ -512,35 +512,35 @@ $\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \ma
 ![](2dés/2dés18.png){width=60% fig-align="center"}
 :::
 
-## Complémentaires indépendants
+## Egalité des deux ensembles $\overline{\text{A}\cup \text{B}}=\overline{\text{A}}\cap \overline{\text{B}}$
 
 ::: slide
 <br><br>
 ![](comp_indep/I1.png){width=80% fig-align="center"}
 :::
 
-## Complémentaires indépendants
+## Egalité des deux ensembles $\overline{\text{A}\cup \text{B}}=\overline{\text{A}}\cap \overline{\text{B}}$
 
 ::: slide
 <br><br>
 ![](comp_indep/I2.png){width=80% fig-align="center"}
 :::
 
-## Complémentaires indépendants
+## Egalité des deux ensembles $\overline{\text{A}\cup \text{B}}=\overline{\text{A}}\cap \overline{\text{B}}$
 
 ::: slide
 <br><br>
 ![](comp_indep/I3.png){width=80% fig-align="center"}
 :::
 
-## Complémentaires indépendants
+## Egalité des deux ensembles $\overline{\text{A}\cup \text{B}}=\overline{\text{A}}\cap \overline{\text{B}}$
 
 ::: slide
 <br><br>
 ![](comp_indep/I5.svg){width=80% fig-align="center"}
 :::
 
-## Complémentaires indépendants
+## Egalité des deux ensembles $\overline{\text{A}\cup \text{B}}=\overline{\text{A}}\cap \overline{\text{B}}$
 ::: slide
 <br><br>
 ![](comp_indep/I6.svg){width=80% fig-align="center"}
