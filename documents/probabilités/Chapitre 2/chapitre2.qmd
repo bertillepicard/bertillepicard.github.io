@@ -541,6 +541,7 @@ $\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \ma
 :::
 
 ## Complémentaires indépendants
+::: slide
 <br><br>
 ![](comp_indep/I6.svg){width=80% fig-align="center"}
 :::
