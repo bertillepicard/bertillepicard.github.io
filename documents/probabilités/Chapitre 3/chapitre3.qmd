@@ -1,0 +1,58 @@
+---
+title: "Probabilités 1"
+subtitle: "Chapitre 3"
+format:
+  revealjs:
+    navigation-mode: vertical 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: "Bertille Picard"
+    theme: serif #simple
+    fontsize: 16pt
+---
+```{r}
+#| echo: false
+loop_images <- function(title, path, first, last){
+  code = ""
+  code = paste(code, paste0(paste(c("# ", title, "\n"), collapse = ""),
+            "![](", path, first, ".png){width=60% fig-align=\"center\"}\n\n"), collapse="\n", sep="")
+for (i in (first+1):last) {
+  code = paste(code, paste0(paste(c("## ", title, "\n"), collapse = ""),
+            "![](", path, i, ".png){width=60% fig-align=\"center\"}\n\n"), collapse="\n", sep="")
+}
+return(code)
+}
+
+```
+
+# Un point sur le chapitre 2
+<br><br>
+
+<iframe src="https://app.wooclap.com/events/PQCEEZ/0" width="100%" height="500px" allowfullscreen="">
+</iframe>
+
+
+`r loop_images("Binôme de Newton", "binome/binome_newton", 0, 11)`
+
+`r loop_images("Binôme de Newton (degré 3)", "binome/3binome_newton", 0, 20)`
+
+`r loop_images("Loi binomiale : possibilités", "binomiale/bin3_", 1, 10)`
+ 
+`r loop_images("Loi binomiale : combinaisons", "binomiale/comb_3_5_", 1, 5)`
+
+`r loop_images("Loi binomiale : Pourquoi n = 5 ? ", "binomiale/combtirages_", 1, 19)`
+
+`r loop_images("Loi binomiale : Calcul de la probabilité", "binomiale/binproba", 1, 20)`
+
+`r loop_images("Loi Géométrique", "lois/géométrique_", 1, 16)`
+
+# Loi Hypergéométrique
+![](lois/hypergéométrique_A.png){width=60% fig-align="center"}
+
+## Loi Hypergéométrique
+![](lois/hypergéométrique_B.png){width=60% fig-align="center"}
+
+`r loop_images("Loi Hypergéométrique", "lois/hypergéométrique_", 1, 10)`

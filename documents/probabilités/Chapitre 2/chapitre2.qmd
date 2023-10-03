@@ -1,6 +1,6 @@
 ---
 title: "Probabilités 1"
-subtitle: ""
+subtitle: "Chapitre 2"
 format:
   revealjs: 
     slide-number: true
@@ -13,7 +13,18 @@ format:
     fontsize: 16pt
 ---
 
+
+
+## Un point sur le chapitre 1
+::: slide
+<br><br>
+
+<iframe src=https://app.wooclap.com/events/KBAQCL/0 width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
 # Chapitre 2
+
 
 ## Ω infini non dénombrable
 ::: slide
@@ -79,37 +90,31 @@ $(x,y)\in \mathbb{R}^2$
 ## Inclusion
 ::: slide
 <br><br>
-![](inclusion/inclusion1_animated.svg){width=80% fig-align="center"}
+![](inclusion/inclusion1.png){width=80% fig-align="center"}
 :::
 
 ## Inclusion
 ::: slide
 <br><br>
-![](inclusion/inclusion2_animated.svg){width=80% fig-align="center"}
+![](inclusion/inclusion2.png){width=80% fig-align="center"}
 :::
 
 ## Inclusion
 ::: slide
 <br><br>
-![](inclusion/inclusion3_animated.svg){width=80% fig-align="center"}
+![](inclusion/inclusion3.png){width=80% fig-align="center"}
 :::
 
 ## Inclusion
 ::: slide
 <br><br>
-![](inclusion/inclusion4_animated.svg){width=80% fig-align="center"}
+![](inclusion/inclusion4.png){width=80% fig-align="center"}
 :::
 
 ## Inclusion
 ::: slide
 <br><br>
-![](inclusion/inclusion5_animated.svg){width=80% fig-align="center"}
-:::
-
-## Inclusion
-::: slide
-<br><br>
-![](inclusion/inclusion6_animated.svg){width=80% fig-align="center"}
+![](inclusion/inclusion7_animated.svg){width=80% fig-align="center"}
 :::
 
 ## Inclusion
@@ -342,6 +347,38 @@ $\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \ma
 <br><br>
 
 ::: slide
+<iframe src=https://app.wooclap.com/events/NIFGDP/questions/632b5e239608e4832fa24966 width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+## Probabilité de l'union
+<br><br>
+
+::: slide
+<iframe src=https://app.wooclap.com/events/NIFGDP/questions/632b621717bc01c544d53bac width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+## Probabilité de l'union
+<br><br>
+
+::: slide
+<iframe src=https://app.wooclap.com/events/NIFGDP/questions/632b63e8400f490227ddf3bb width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+## Probabilité de l'union
+<br><br>
+
+::: slide
+<iframe src=https://app.wooclap.com/events/NIFGDP/questions/632b63ebf7ab7105023b9813 width="100%" height="500px" allowfullscreen></iframe>
+
+:::
+
+## Probabilité de l'union
+<br><br>
+
+::: slide
 ![](ensembles/probaunion1.png){width=60% fig-align="center"}
 :::
 
@@ -474,3 +511,49 @@ $\mathbb{P}(A \cup B \cup C)=\mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \ma
 ::: slide
 ![](2dés/2dés18.png){width=60% fig-align="center"}
 :::
+
+## Complémentaires indépendants
+
+::: slide
+<br><br>
+![](comp_indep/I1.png){width=80% fig-align="center"}
+:::
+
+## Complémentaires indépendants
+
+::: slide
+<br><br>
+![](comp_indep/I2.png){width=80% fig-align="center"}
+:::
+
+## Complémentaires indépendants
+
+::: slide
+<br><br>
+![](comp_indep/I3.png){width=80% fig-align="center"}
+:::
+
+## Complémentaires indépendants
+
+::: slide
+<br><br>
+![](comp_indep/I5.svg){width=80% fig-align="center"}
+:::
+
+## Complémentaires indépendants
+<br><br>
+![](comp_indep/I6.svg){width=80% fig-align="center"}
+:::
+
+
+## Egalité des deux ensembles $\overline{\text{A}\cup \text{B}}=\overline{\text{A}}\cap \overline{\text{B}}$
+
+::: slide
+![](comp_indep/I5.svg){width=50% fig-align="center"}
+<br>
+![](comp_indep/I6.svg){width=50% fig-align="center"}
+:::
+
+
+
+
