@@ -18,30 +18,29 @@
 <body class="antialiased place-items-center">
     <div :class="{'dark': darkMode === true} ">
         <div class = "min-h-screen dark:bg-bckgdark bg-bckglight"> 
-            <nav class="p-5 shadow-xl bg-fondnavcolor md:flex md:items-center md:justify-between">
-        <div class="flex items-center justify-between ">
-            <button onclick="callToIndex();" class="text-2xl md:text-2xl lg:text-3xl font-[Poppins] text-ongletcolor visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100 duration-500"> Bertille Picard </button>
-            <span class="block mx-2 text-3xl cursor-pointer md:hidden">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-              </span>
-        </div>
-        
-        <ul class="hidden md:flex text-ongletcolor md:items-center z-[-1] md:z-auto md:static w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity- top-[-400px] transition-all ease-in duration-500">
-            <li class="mx-4 my-6 md:my-0">
-                <button onclick="callToIndex();" class="text-xl duration-500 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100"> Home </button>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <button onclick="callToResearch();" class="text-xl duration-500 text-ongletcolor visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100"> Research </button>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <button onclick="callToTeaching();" class="text-xl duration-500 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100"> Teaching </button>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <button onclick="callToCV();" class="text-xl duration-500 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100"> CV </button>
-            </li>
-            <li><button class="mx-4 text-xl duration-500 md:px-10 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100" onclick="toggledark();"><i class="fas fa-adjust"></i></button></li>
-        </ul>
-    </nav>
+            <nav class="shadow-xl bg-fondnavcolor md:flex md:items-center md:justify-between">
+                <div class="flex items-center justify-between p-4">
+                    <button onclick="callToIndex();" class="text-2xl md:text-2xl lg:text-3xl font-[Poppins] text-ongletcolor visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100 duration-400"> Bertille Picard </button>
+                    <span class="block mx-2 text-3xl cursor-pointer md:hidden">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+                    <ul class="hidden flex-col md:flex-row font-medium border border-fondnavcolor bg-[#436187] md:bg-fondnavcolor md:flex text-ongletcolor md:items-center z-[-1] md:z-auto md:static w-full left-0 md:w-auto md:py-0 md:pl-0 pl-7 md:opacity-100 opacity- top-[-400px]">                        <li onclick="callToIndex();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
+                    <button onclick="callToIndex();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Home </button>
+                </li>
+                <li onclick="callToResearch();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
+                  <button onclick="callToResearch();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Research </button>
+                </li>
+                <li onclick="callToTeaching();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
+                    <button onclick="callToTeaching();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Teaching </button>
+                </li>
+                <li onclick="callToCV();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
+                    <button onclick="callToCV();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> CV </button>
+                </li>
+                <li class="pb-2 "><button class="py-2 mx-4 text-xl duration-400 md:px-10 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100" onclick="toggledark();"><i class="fas fa-adjust"></i></button></li>
+            </ul>
+        </nav>
+
     <div class="">
 
         <div class="grid grid-cols-9 md:px-20 md:py-4 lg:px-60 min-h-fit dark:text-ongletcolor lg:text-lg">
@@ -183,12 +182,25 @@
 
 <script type="text/javascript" src="scriptPostDoc.js"></script>
 <script>
-    function Menu(e){
+    function Menu(e) {
       let list = document.querySelector('ul');
-      e.name === 'menu' ? (e.name = "close",list.classList.remove('hidden')) :( e.name = "menu" ,list.classList.add('hidden'))
-    }
-  </script>
-    <script src="dist/accordion.js"></script>
+      if (e.name === 'menu') {
+        e.name = "close";
+        list.classList.remove('hidden');
+        list.classList.add('hidden-menu');
+        setTimeout(() => {
+          list.classList.remove('hidden-menu');
+          list.classList.add('visible-menu');
+        }, 10); // Adjust the delay as needed
+      } else {
+        e.name = "menu";
+        list.classList.remove('visible-menu');
+        list.classList.add('hidden-menu');
+      }
+    }  
+</script>
+    
+<script src="dist/accordion.js"></script>
 
     <script>
       new Accordion('.accordion-container1');

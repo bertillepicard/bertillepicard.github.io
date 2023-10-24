@@ -96,3 +96,21 @@ a.socnetw:hover, a.socnetw:focus, a.socnetw:active {color: var(--colhover);}
     margin-right: 10px;
     transition: transform 0.3s ease;
 }
+
+
+
+/* Initial state for hidden menu */
+.hidden-menu {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+
+/* Visible menu state */
+.visible-menu {
+  opacity: 1;
+  max-height: 100vh; /* Use the viewport height to expand to the full screen height */
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
