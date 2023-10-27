@@ -1050,16 +1050,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 0px;
   }
 
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .md\:pl-\[10\%\] {
     padding-left: 10%;
   }
 
   .md\:pr-\[15\%\] {
     padding-right: 15%;
-  }
-
-  .md\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .md\:text-2xl {
