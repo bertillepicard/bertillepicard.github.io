@@ -1,6 +1,6 @@
 ---
 title: "Probabilités 1"
-subtitle: "Chapitre 3"
+subtitle: "Chapitre 4"
 format:
   revealjs:
     navigation-mode: linear
