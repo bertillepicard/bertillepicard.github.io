@@ -1,0 +1,71 @@
+---
+title: "Probabilités 1"
+subtitle: "Chapitre 3"
+format:
+  revealjs:
+    navigation-mode: linear
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: "Bertille Picard"
+    theme: serif #simple
+    fontsize: 16pt
+---
+```{r}
+#| echo: false
+loop_images <- function(title, path, first, last){
+  code = ""
+  code = paste(code, paste0(paste(c("## ", title, "\n"), collapse = ""),
+            "![](", path, first, ".png){width=60% fig-align=\"center\"}\n\n"), collapse="\n", sep="")
+for (i in (first+1):last) {
+  code = paste(code, paste0(paste(c("## ", title, "\n"), collapse = ""),
+            "![](", path, i, ".png){width=60% fig-align=\"center\"}\n\n"), collapse="\n", sep="")
+}
+return(code)
+}
+
+```
+
+# Un point sur le chapitre 3
+::: slide
+<br><br>
+
+<iframe src="https://app.wooclap.com/events/NYEBRG/0" width="100%" height="500px" allowfullscreen="">
+</iframe>
+:::
+
+
+# Loi uniforme {background-video="PLUIE.mkv" background-size="contain" background-video-loop="true" background-video-muted="true"}
+
+`r loop_images("Loi uniforme ", "uniforme/Frame ", 1, 10)`
+
+## Loi uniforme : densité et fonction de répartition
+<br>
+<iframe src="https://www.desmos.com/calculator/soxu20rsls?embed" width="100%" height="500" fontSize=10 frameborder=0></iframe>
+
+## Loi normale : densité et fonction de répartition
+<br>
+<iframe src="https://www.desmos.com/calculator/mqoh2l6yng?embed" width="100%" height="500" fontSize=10 frameborder=0></iframe>
+
+## Loi normale : point d'inflexion et écart-type
+<br>
+<iframe src="https://www.desmos.com/calculator/fnyaddlio1?embed" width="100%" height="500" fontSize=10 frameborder=0></iframe>
+
+## Loi exponentielle : densité et fonction de répartition
+<br>
+<iframe src="https://www.desmos.com/calculator/4n6lcmeov3?embed" width="100%" height="500" fontSize=10 frameborder=0></iframe>
+
+# Feedback
+
+::: slide
+
+::: {.callout-warning}
+# Attention !
+Restez anonymes s'il vous plaît !
+:::
+
+<iframe src="https://app.wooclap.com/events/RHEIAJ/0" width="100%" height="500px" allowfullscreen="">
+</iframe>
+:::
