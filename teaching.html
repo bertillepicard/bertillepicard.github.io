@@ -1,173 +1,881 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-        <title>Bertille Picard</title>
-    <link rel="stylesheet" href="dist/output.css">
-    <link rel="stylesheet" href="dist/accordion.css">
-    <link rel="stylesheet" href="css/addtostyle.css">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Bertille Picard – teaching</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="antialiased place-items-center">
-    <div class="{'dark': darkMode === true} ">
-        <div class = "min-h-screen dark:bg-bckgdark bg-bckglight "> 
-          <nav class="shadow-xl bg-fondnavcolor md:flex md:items-center md:justify-between">
-            <div class="flex items-center justify-between p-4">
-                <button onclick="callToIndex();" class="text-2xl md:text-2xl lg:text-3xl font-[Poppins] text-ongletcolor visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100 duration-400"> Bertille Picard </button>
-                <span class="block mx-2 text-3xl cursor-pointer md:hidden">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                </span>
-            </div>
-                <ul class="hidden flex-col md:flex-row font-medium border border-fondnavcolor bg-[#436187] md:bg-fondnavcolor md:flex text-ongletcolor md:items-center z-[-1] md:z-auto md:static w-full left-0 md:w-auto md:py-0 md:pl-0 px-7 md:opacity-100 opacity- top-[-400px]">                        
-                  <li onclick="callToIndex();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
-                <button onclick="callToIndex();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Home </button>
-            </li>
-            <li onclick="callToResearch();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
-              <button onclick="callToResearch();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Research </button>
-            </li>
-            <li onclick="callToTeaching();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
-                <button onclick="callToTeaching();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Teaching </button>
-            </li>
-            <li onclick="callToCV();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
-                <button onclick="callToCV();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> CV </button>
-            </li>
-            <li class="pb-2 md:pb-0"><button class="py-2 mx-4 text-xl duration-400 md:px-10 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100" onclick="toggledark();"><i class="fas fa-adjust"></i></button></li>
-        </ul>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Bertille Picard</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./teaching.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
     </nav>
-
-        <div class="">
-
-        <div class="px-10 py-10 md:px-44 lg:px-64 xl:px-96 dark:text-ongletcolor lg:text-lg">
-            <br>Since 2022, I teach as a <b>Lecturer</b>:<br>
-            <div class="accordion-container1">
-                <div class="bg-white ac dark:bg-fondcarddark">
-                    <h2 class="ac-header">
-                      <button type="button" class="ac-trigger">Probability Theory</button>
-                    </h2>
-                    <div class="ac-panel">
-                      <p class="ac-text">
-                        Counting methods <br>
-                        Probability measures<br>
-                        Independence, conditioning and Bayes' rule <br>
-                        Discrete and continuous random variables  <br> <br>
-                        <button onclick="callToTeachingVisualsProbability();"  class="shadow-md button specialbutton hover:bg-gray-100 dark:hover:bg-darkshadowcard" >Visuals</button>
-                      </p>
-                    </div>
-                  </div>
-        </div>
-            <br><br>Since 2019, I have also been a <b>Teaching Assistant</b> in:
-                <div class="accordion-container2">
-                    <div class="bg-white ac dark:bg-fondcarddark">
-                      <h2 class="ac-header">
-                        <button type="button" class="ac-trigger">Introductory Econometrics</button>
-                      </h2>
-                      <div class="ac-panel">
-                        <p class="ac-text">
-                            Linear regression <br>
-                            OLS estimator <br>
-                            Student's t tests and F tests <br>
-                            Consistency and asymptotic normality <br>
-                            Instrumental variables <br>
-                            Illustration using R  <br><br>
-                            <button onclick="callToTeachingVisualsEconometrics();"  class="shadow-md button specialbutton hover:bg-gray-100 dark:hover:bg-darkshadowcard" >Visuals</button>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="bg-white ac dark:bg-fondcarddark">
-                        <h2 class="ac-header">
-                          <button type="button" class="ac-trigger">Econometrics of Qualitative Variables</button>
-                        </h2>
-                        <div class="ac-panel">
-                          <p class="ac-text">
-                            Logit and probit models <br>
-                            Maximum likelihood <br>
-                            Tests: Wald, Lagrange multipliers, likelihood ratio statistics <br>
-                            Illustration using Stata </p>                    
-                          </p>
-                        </div>
-                      </div>
-                      <div class="bg-white ac dark:bg-fondcarddark">
-                        <h2 class="ac-header">
-                          <button type="button" class="ac-trigger">Mathematics</button>
-                        </h2>
-                        <div class="ac-panel">
-                          <p class="ac-text">
-                            Derivatives & integrals <br>
-                            Optimization <br>
-                            Hessian matrix<br>
-                            Taylor's theorem <br>
-                            Lagrange function <br>
-                            Implicit function theorem <br><br>
-                            <button onclick="callToTeachingVisualsMathematics();"  class="shadow-md button specialbutton hover:bg-gray-100 dark:hover:bg-darkshadowcard" >Visuals</button>    
-                          </p>
-                        </div>
-                      </div>
-                      <div class="bg-white ac dark:bg-fondcarddark">
-                        <h2 class="ac-header">
-                          <button type="button" class="ac-trigger">Probability Theory</button>
-                        </h2>
-                        <div class="ac-panel">
-                          <p class="ac-text">
-                            Counting methods <br>
-                            Probability measures<br>
-                            Independence, conditioning and Bayes' rule <br>
-                            Discrete and continuous random variables
-                          </p>
-                        </div>
-                      </div>
-                      <div class="bg-white ac dark:bg-fondcarddark">
-                        <h2 class="ac-header">
-                          <button type="button" class="ac-trigger">Industrial Organization</button>
-                        </h2>
-                        <div class="ac-panel">
-                        <p class="ac-text">
-                            Monopoly <br>
-                            Price discrimination <br>
-                            Basic concepts in game theory <br>
-                            Imperfect competition - Cournot, Bertrand, Hotelling
-                        </p>
-                        </div>
-                      </div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
     
-    
-                    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
 
-            </div>
-    </div>
+
+
+<!-- BEGIN:HTML_ONLY -->
+<script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+<!-- END:HTML_ONLY -->
+<p>Since 2022, I teach as a <b>Lecturer</b>:<br></p>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Probability Theory
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Counting methods <br></li>
+<li>Probability measures<br></li>
+<li>Independence, conditioning and Bayes’ rule <br></li>
+<li>Discrete and continuous random variables <br></li>
+</ul>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Slides
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Chapter 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Chapter 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Chapter 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Chapter 4</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><a href="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%201/chapitre%201.html" class="btn btn-outline-secondary" style="padding: 10px 40px;">View Full Screen</a></p>
+<iframe src="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%201/chapitre%201.html#/tirage-avec-remise" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+</iframe>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><a href="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%202/chapitre2.html" class="btn btn-outline-secondary" style="padding: 10px 40px;">View Full Screen</a></p>
+<iframe src="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%202/chapitre2.html#/intersection-1" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+</iframe>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><a href="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%203/chapitre3.html" class="btn btn-outline-secondary" style="padding: 10px 40px;">View Full Screen</a></p>
+<iframe src="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%203/chapitre3.html#/bin%C3%B4me-de-newton-degr%C3%A9-3-17" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+</iframe>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p><a href="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%204/chapitre4.html" class="btn btn-outline-secondary" style="padding: 10px 40px;">View Full Screen</a></p>
+<iframe src="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%204/chapitre4.html#/loi-uniforme-9" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Desmos Graphs
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Uniform</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Normal distribution</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Exponential distribution</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/soxu20rsls?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/soxu20rsls?embed" width="100%" height="500" fontsize="10" frameborder="0">
+</iframe>
+<p><br></p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/mqoh2l6yng?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/mqoh2l6yng?embed" width="100%" height="500" frameborder="0">
+</iframe>
+<br>
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/fnyaddlio1?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/fnyaddlio1?embed" width="100%" height="500" frameborder="0">
+</iframe>
+<p><br></p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p class="ac-text">
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/4n6lcmeov3?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/4n6lcmeov3?embed" width="100%" height="500" frameborder="0">
+</iframe>
+<p><br></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Since 2019, I have also been a <b>Teaching Assistant</b> in:</p>
+<div class="callout callout-style-simple callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Introductory Econometrics
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Linear regression <br></li>
+<li>OLS estimator <br></li>
+<li>Student’s t tests and F tests <br></li>
+<li>Consistency and asymptotic normality <br></li>
+<li>Instrumental variables <br></li>
+<li>Illustration using R</li>
+</ul>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Desmos Graphs
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Linear Model</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Student Test</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Fisher Test</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/7f6hrhpv8x?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/7f6hrhpv8x?embed" width="100%" height="500" frameborder="0">
+</iframe>
+<br>
+<div id="calculator-linreg" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/citni5wqdz?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/citni5wqdz?embed" width="100%" height="500" frameborder="0">
+</iframe>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/7tkug6uznw?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/7tkug6uznw?embed" width="100%" height="500" frameborder="0">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Econometrics of Qualitative Variables
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Logit and probit models <br></li>
+<li>Maximum likelihood <br></li>
+<li>Tests: Wald, Lagrange multipliers, likelihood ratio statistics <br></li>
+<li>Illustration using Stata</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Mathematics
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Derivatives &amp; integrals <br></li>
+<li>Optimization <br></li>
+<li>Hessian matrix<br></li>
+<li>Taylor’s theorem <br></li>
+<li>Lagrange function <br></li>
+<li>Implicit function theorem</li>
+</ul>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Desmos Graphs
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Square function</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Convexity and concavity</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Integrals</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/qlizdipilw?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/qlizdipilw?embed" width="100%" height="500" frameborder="0">
+</iframe>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/dtuz7e375c?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/dtuz7e375c?embed" width="100%" height="500" frameborder="0">
+</iframe>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/g8xzy9n9hm?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/g8xzy9n9hm?embed" width="100%" height="500" frameborder="0">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Probability Theory
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Counting methods <br></li>
+<li>Probability measures<br></li>
+<li>Independence, conditioning and Bayes’ rule <br></li>
+<li>Discrete and continuous random variables</li>
+</ul>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Slides
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Chapter 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Chapter 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Chapter 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">Chapter 4</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<p><a href="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%201/chapitre%201.html" class="btn btn-outline-secondary" style="padding: 10px 40px;">View Full Screen</a></p>
+<iframe src="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%201/chapitre%201.html#/tirage-avec-remise" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+</iframe>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p><a href="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%202/chapitre2.html" class="btn btn-outline-secondary" style="padding: 10px 40px;">View Full Screen</a></p>
+<iframe src="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%202/chapitre2.html#/intersection-1" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+</iframe>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<p><a href="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%203/chapitre3.html" class="btn btn-outline-secondary" style="padding: 10px 40px;">View Full Screen</a></p>
+<iframe src="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%203/chapitre3.html#/bin%C3%B4me-de-newton-degr%C3%A9-3-17" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+</iframe>
+</div>
+<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<p><a href="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%204/chapitre4.html" class="btn btn-outline-secondary" style="padding: 10px 40px;">View Full Screen</a></p>
+<iframe src="https://bertillepicard.github.io/documents/probabilit%C3%A9s/Chapitre%204/chapitre4.html#/loi-uniforme-9" style="width: 100%; aspect-ratio: 6 / 4; border: none;">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Desmos Graphs
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Uniform</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Normal distribution</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">Exponential distribution</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/soxu20rsls?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/soxu20rsls?embed" width="100%" height="500" fontsize="10" frameborder="0">
+</iframe>
+<p><br></p>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/mqoh2l6yng?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/mqoh2l6yng?embed" width="100%" height="500" frameborder="0">
+</iframe>
+<br>
+<p>
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/fnyaddlio1?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/fnyaddlio1?embed" width="100%" height="500" frameborder="0">
+</iframe>
+<p><br></p>
+</div>
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<p class="ac-text">
+If the preview is not adapted to your screen or if you want to customize the graph below, click on <a target="_blank" href="https://www.desmos.com/calculator/4n6lcmeov3?">Edit Graph on Desmos</a>.
+</p>
+<iframe src="https://www.desmos.com/calculator/4n6lcmeov3?embed" width="100%" height="500" frameborder="0">
+</iframe>
+<p><br></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Industrial Organization
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Monopoly <br></li>
+<li>Price discrimination <br></li>
+<li>Basic concepts in game theory <br></li>
+<li>Imperfect competition - Cournot, Bertrand, Hotelling</li>
+</ul>
+</div>
+</div>
 </div>
 
-<script type="text/javascript" src="scriptPostDoc.js"></script>
 <script>
-  function Menu(e) {
-    let list = document.querySelector('ul');
-    if (e.name === 'menu') {
-      e.name = "close";
-      list.classList.remove('hidden');
-      list.classList.add('hidden-menu');
-      setTimeout(() => {
-        list.classList.remove('hidden-menu');
-        list.classList.add('visible-menu');
-      }, 10); // Adjust the delay as needed
-    } else {
-      e.name = "menu";
-      list.classList.remove('visible-menu');
-      list.classList.add('hidden-menu');
-    }
-  }  
-</script>
-    <script src="dist/accordion.js"></script>
+// Get the screen width to determine the screen size
+var screenWidth = window.innerWidth;
 
-  <script>
-    new Accordion('.accordion-container1');
-    new Accordion('.accordion-container2');
-  </script>
-  <!-- More about accordion here: https://michu2k.github.io/Accordion/ -->
-  
-    </body>
-</html>
+// Initialize the default font size
+var desmosfontSize = 14;
+
+// Check the screen size and adjust the font size accordingly
+if (screenWidth < 768) { // Small screens (e.g., tablets)
+    desmosfontSize = 12;
+} else if (screenWidth < 480) { // Smartphones
+    desmosfontSize = 10;
+}
+</script>
+<script src="graphs/linreg.js"></script>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

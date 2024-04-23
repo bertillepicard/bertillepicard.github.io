@@ -1,201 +1,583 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-        <title>Bertille Picard</title>
-    <link rel="stylesheet" href="dist/output.css">
-    <link rel="stylesheet" href="dist/accordion.css">
-    <link rel="stylesheet" href="css/addtostyle.css">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Bertille Picard – research</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="antialiased place-items-center">
-    <div class="{'dark': darkMode === true} ">
-        <div class = "min-h-screen dark:bg-bckgdark bg-bckglight "> 
-            <nav class="shadow-xl bg-fondnavcolor md:flex md:items-center md:justify-between">
-                <div class="flex items-center justify-between p-4">
-                    <button onclick="callToIndex();" class="text-2xl md:text-2xl lg:text-3xl font-[Poppins] text-ongletcolor visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100 duration-400"> Bertille Picard </button>
-                    <span class="block mx-2 text-3xl cursor-pointer md:hidden">
-                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                    </span>
-                </div>
-                <ul class="hidden flex-col md:flex-row font-medium border border-fondnavcolor bg-[#436187] md:bg-fondnavcolor md:flex text-ongletcolor md:items-center z-[-1] md:z-auto md:static w-full left-0 md:w-auto md:py-0 md:pl-0 px-7 md:opacity-100 opacity- top-[-400px]">                        
-                    <li onclick="callToIndex();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
-                      <button onclick="callToIndex();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Home </button>
-                </li>
-                <li onclick="callToResearch();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
-                  <button onclick="callToResearch();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Research </button>
-                </li>
-                <li onclick="callToTeaching();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
-                    <button onclick="callToTeaching();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> Teaching </button>
-                </li>
-                <li onclick="callToCV();" class="cursor-pointer py-2 pl-3 pr-4 mx-1 my-2 rounded md:my-0 hover:bg-[#223d5b] hover:text-stone-100">
-                    <button onclick="callToCV();" class="text-xl duration-400 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor "> CV </button>
-                </li>
-                <li class="pb-2 md:pb-0"><button class="py-2 mx-4 text-xl duration-400 md:px-10 visited:text-ongletcolor link:text-ongletcolor active:text-ongletcolor hover:text-stone-100" onclick="toggledark();"><i class="fas fa-adjust"></i></button></li>
-            </ul>
-        </nav>
-             
-            <div class="grid grid-cols-9 py-2 md:px-20 md:py-6 lg:px-60 min-h-fit dark:text-ongletcolor lg:text-lg">
-                <div class="col-start-1 col-end-10 p-4 pt-6">
-                    <h1 class="text-xl lg:text-3xl">
-                    Job Market Paper <br>
-                    </h1>
-            </div>
 
-            <div class="col-start-1 col-end-10 p-4 md:col-start-2">
-                <div align="justify">
-                    <div class="p-4 bg-white ac dark:bg-fondcarddark">
-                        <h4><strong><span style="color: var(--collink);" class="text-lg text-justify lg:text-xl">Does Personalized Allocation Make Our Experimental Designs More Fair?</span></strong></h4>
-                            Bertille Picard<br><br>
-                            <a href="https://www.dropbox.com/scl/fi/v68ckyer9d6e8v3592bwf/Fairness_Experimental_Designs.pdf?rlkey=qc1apo4rhhvzh44vprxk0jba3&dl=0" target="_blank">
-                                <button class="shadow-md button specialbutton hover:bg-gray-100 dark:hover:bg-darkshadowcard" >Last Draft</button>    
-                            </a><br><br>
-                            <div class="bandeau">
-                            <div class="bouton bouton-toggle">
-                                <span class="fleche">&#9656;</span> Abstract
-                            </div>
-                            <div class="contenu contenu-toggle">
-                                <p class="p-5 pt-1">
-                                    Algorithms can optimize treatment allocation within an experimental design. They can progressively identify the most beneficial treatment for the subjects and thus maximize the experiment's overall impact. However, these designs raise concerns for experimentalists and policymakers because they involve transferring decision-making to an algorithm. Are adaptive experiments inherently fairer and thus a preferred choice over traditional randomized controlled trials? In this paper, I propose a comprehensive examination of fairness by considering multiple criteria that can influence the researchers' preference for one design over the other: the possibility to increase the benefits of the experiment for the experimental subjects, the transparency of the decision rule, the absence of discrimination regarding the treatment allocation, the protection of individuals' data. By summarizing and analyzing these distinct criteria through a utility model, I discuss the relative fairness of adaptive experiments and standard randomized controlled trials. Specifically, I show that these different designs align with extreme versions of the fairness utility model, reflecting the pursuit of distinct fairness objectives within experimental settings. I highlight intermediate solutions that can be pursued to reconcile and balance different fairness objectives in experimental designs.
-                                </p>
-                            </div>
-                        </div>                             
-                    </div>
-                </div>
-            </div>
-    
-                <div class="col-start-1 col-end-10 p-4">
-                    <h1 class="text-xl lg:text-3xl">
-                    Working Paper <br>
-                    </h1>
-            </div>
+<body class="nav-fixed fullcontent">
 
-            <div class="col-start-1 col-end-10 p-4 md:col-start-2">
-                <div align="justify">
-                    <div class="p-4 bg-white ac dark:bg-fondcarddark">
-                        <h4><strong><span style="color: var(--collink);" class="text-lg text-justify lg:text-xl">Can a Website Bring Unemployment Down? Experimental Evidence from France</span></strong></h4>
-                        Aïcha Ben Dhia, Bruno Crépon, Esther Mbih, Louise Paul-Delvaux, Bertille Picard, and Vincent Pons<br><br>
-                        <a href="https://www.nber.org/papers/w29914" target="_blank">
-                            <button class="shadow-md button specialbutton hover:bg-gray-100 dark:hover:bg-darkshadowcard" >NBER</button>    
-                        </a>
-                        <a href="https://cepr.org/voxeu/columns/sobering-story-website-attempted-bring-unemployment-down-0" target="_blank">
-                            <button class="shadow-md button specialbutton hover:bg-gray-100 dark:hover:bg-darkshadowcard" >VoxEU</button>    
-                        </a><br><br>
-                        <div class="bandeau">
-                            <div class="bouton bouton-toggle">
-                                <span class="fleche">&#9656;</span> Abstract
-                            </div>
-                            <div class="contenu contenu-toggle">
-                                <p class="p-5 pt-1">
-                                We evaluate the impact of an online platform giving job seekers tips to improve their search and recommendations of new occupations and locations to target, based on their personal data and labor market data. Our experiment used an encouragement design and was conducted in collaboration with the French public employment agency. It includes 212,277 individuals. We find modest effects on search methods: the users of the platform adopt some of its tips and they are more likely to use resources provided by public employment services. However, following individual trajectories for 18 months after the intervention, we do not observe any impact on time spent looking for a job, search scope (occupational or geographical), or self-reported well-being. Most importantly, we do not find any effect on any employment outcome, whether in the short or medium run. We conclude that the enthusiasm around the potential for job-search assistance platforms to help reduce unemployment should be toned down.
-                                </p>
-                            </div>
-                        </div>                             
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col-start-1 col-end-10 p-4">
-                <h1 class="text-xl lg:text-3xl">
-                    Work in Progress <br>
-                </h1>
-            </div>
-            <div class="col-start-1 col-end-10 p-4 md:col-start-2">
-                <div align="justify">
-                    <div class="p-4 bg-white ac dark:bg-fondcarddark">
-                        <h4><strong><span style="color: var(--collink);" class="text-lg text-justify lg:text-xl">Decomposing Inequalities with Machine Learning: Should we Change the Reference Outcome?</span></strong></h4>
-                            Emmanuel Flachaire, Bertille Picard<br>
-                        <div class="bandeau">
-                            <div class="bouton bouton-toggle">
-                                <span class="fleche">&#9656;</span> Abstract
-                            </div>
-                            <div class="contenu contenu-toggle">
-                                <p class="p-5 pt-1">
-                                    The Kitagawa-Oaxaca-Blinder decomposition is widely used in empirical studies to analyze changes in a distributional statistic between two groups or two periods. It separates an observed difference  into an explained part due to individuals' observed characteristics and an unexplained part. In this paper, the assumptions required to identify the different components of the aggregate decomposition are discussed, and  two key hypotheses are discussed: the common support condition and the correct specification of a parametric linear model. This leads us to propose a decomposition method in a fully non-parametric framework.
-                                </p>
-                            </div>
-                        </div>                             
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-start-1 col-end-10 p-4 md:col-start-2">
-                <div align="justify">
-                    <div class="p-4 bg-white ac dark:bg-fondcarddark">
-                        <h4><strong><span style="color: var(--collink);" class="text-lg text-justify lg:text-xl">An Adaptive Experiment to Boost Online Skill Signaling and Visibility</span></strong></h4>
-                        Morgane Hoffmann, Bertille Picard, Charly Marie and Guillaume Bied<br><br>
-                        <a href="https://bertillepicard.github.io/documents/papers/AnAdaptiveExpeToBoostOnlineSkillsSignaling.pdf" target="_blank">
-                            <button class="shadow-md button specialbutton hover:bg-gray-100 dark:hover:bg-darkshadowcard" >Last Draft</button>    
-                        </a><br><br>
-                            <div class="bandeau">
-                                <div class="bouton bouton-toggle">
-                                    <span class="fleche">&#9656;</span> Abstract
-                                </div>
-                                <div class="contenu contenu-toggle">
-                                    <p class="p-5 pt-1">
-                                        Digital matching platforms promise to reduce frictions on the labor market by providing low-cost information on available positions and candidates. As such, they may form a welcome addition to the toolbox available to Public Employment Services to bridge labor supply and demand. However, there are certain challenges associated with their adoption. For instance, vulnerable populations may face difficulties in utilizing digital tools effectively. In this study, we evaluate the impact of a communication campaign by email designed to encourage the use of an online matching platform maintained by the French Public Employment Service, Pôle emploi. We designed several email templates that combined information, support or motivational content to encourage jobseekers to engage with their profiles on the platform. In order to discover email effectiveness we implement an adaptive experiment (contextual bandit) where the goal is to use past jobseekers take-up responses and characteristics to determine email allocation in the future, reducing gradually the allocation of less promising templates. Additionally, we built an optimal personalization allocation strategy based on collected data and test its effectiveness. Emails had a positive impact on the usage of the platform, as measured by a wide range of outcomes. However, attempts at learning a personalized emailing strategy did not manage to significantly improve on a random allocation of email templates.
-                                                                            </p>
-                                </div>
-                            </div>
-                
-                                                       
-                        </div>
-                
-            </div>
-                <div align="justify">
-                </div>
-            </div>
-        
-        </div>
-        <div class="py-10"></div>
-    </div>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Bertille Picard</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./research.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./teaching.html" rel="" target="">
+ <span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
 
-<script type="text/javascript" src="scriptPostDoc.js"></script>
-<script>
-    function Menu(e) {
-      let list = document.querySelector('ul');
-      if (e.name === 'menu') {
-        e.name = "close";
-        list.classList.remove('hidden');
-        list.classList.add('hidden-menu');
-        setTimeout(() => {
-          list.classList.remove('hidden-menu');
-          list.classList.add('visible-menu');
-        }, 10); // Adjust the delay as needed
+
+
+<ul class="paper-list">
+<section id="working-paper" class="level1">
+<h1>Working Paper</h1>
+<li class="paper-item">
+<h5 class="paper-title anchored" data-anchor-id="working-paper">
+Can a Website Bring Unemployment Down? Experimental Evidence from France
+</h5>
+<p class="paper-authors">
+Aïcha Ben Dhia, Bruno Crépon, Esther Mbih, Louise Paul-Delvaux, Bertille Picard, and Vincent Pons
+</p>
+<p class="paper-keywords">
+<strong>Keywords</strong>: Labor economics, Online platforms
+</p>
+<p><a href="https://www.nber.org/papers/w29914" class="download-link">NBER Working Paper 29914, April 2022</a> <a href="https://cepr.org/voxeu/columns/sobering-story-website-attempted-bring-unemployment-down-0" class="download-link">VoxEU Column</a></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We evaluate the impact of an online platform giving job seekers tips to improve their search and recommendations of new occupations and locations to target, based on their personal data and labor market data. Our experiment used an encouragement design and was conducted in collaboration with the French public employment agency. It includes 212,277 individuals. We find modest effects on search methods: the users of the platform adopt some of its tips and they are more likely to use resources provided by public employment services. However, following individual trajectories for 18 months after the intervention, we do not observe any impact on time spent looking for a job, search scope (occupational or geographical), or self-reported well-being. Most importantly, we do not find any effect on any employment outcome, whether in the short or medium run. We conclude that the enthusiasm around the potential for job-search assistance platforms to help reduce unemployment should be toned down.</p>
+</div>
+</div>
+</div>
+</li>
+</section>
+<section id="work-in-progress" class="level1">
+<h1>Work in progress</h1>
+<li class="paper-item">
+<h5 class="paper-title anchored" data-anchor-id="work-in-progress">
+Does Personalized Allocation Make Our Experimental Designs More Fair?
+</h5>
+<p class="paper-authors">
+Bertille Picard
+</p>
+<p class="paper-keywords">
+<strong>Keywords</strong>: Fairness, Contextual bandits, Randomized controlled trials, Machine learning
+</p>
+<p><a href="https://www.dropbox.com/scl/fi/v68ckyer9d6e8v3592bwf/Fairness_Experimental_Designs.pdf?rlkey=qc1apo4rhhvzh44vprxk0jba3&amp;e=1&amp;dl=0" class="download-link">Draft</a></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Algorithms can optimize treatment allocation within an experimental design. They can progressively identify the most beneficial treatment for the subjects and thus maximize the experiment’s overall impact. However, these designs raise concerns for experimentalists and policymakers because they involve transferring decision-making to an algorithm. Are adaptive experiments inherently fairer and thus a preferred choice over traditional randomized controlled trials? In this paper, I propose a comprehensive examination of fairness by considering multiple criteria that can influence the researchers’ preference for one design over the other: the possibility to increase the benefits of the experiment for the experimental subjects, the transparency of the decision rule, the absence of discrimination regarding the treatment allocation, the protection of individuals’ data. By summarizing and analyzing these distinct criteria through a utility model, I discuss the relative fairness of adaptive experiments and standard randomized controlled trials. Specifically, I show that these different designs align with extreme versions of the fairness utility model, reflecting the pursuit of distinct fairness objectives within experimental settings. I highlight intermediate solutions that can be pursued to reconcile and balance different fairness objectives in experimental designs.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="paper-item">
+<h5 class="paper-title anchored">
+Decomposing Inequalities with Machine Learning: Should we Change the Reference Outcome?
+</h5>
+<p class="paper-authors">
+Emmanuel Flachaire, Bertille Picard
+</p>
+<p class="paper-keywords">
+<strong>Keywords</strong>: Inequality, Oaxaca decomposition, Machine learning
+</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The Kitagawa-Oaxaca-Blinder decomposition is widely used in empirical studies to analyze changes in a distributional statistic between two groups or two periods. It separates an observed difference into an explained part due to individuals’ observed characteristics and an unexplained part. In this paper, the assumptions required to identify the different components of the aggregate decomposition are discussed, and two key hypotheses are discussed: the common support condition and the correct specification of a parametric linear model. This leads us to propose a decomposition method in a fully non-parametric framework.</p>
+</div>
+</div>
+</div>
+</li>
+<li class="paper-item">
+<h5 class="paper-title anchored">
+An Adaptive Experiment to Boost Online Skill Signaling and Visibility
+</h5>
+<p class="paper-authors">
+Morgane Hoffmann, Bertille Picard, Charly Marie, and Guillaume Bied
+</p>
+<p class="paper-keywords">
+<strong>Keywords</strong>: Labor economics, Online platforms, Adaptive experiments
+</p>
+<p><a href="https://bertillepicard.github.io/documents/papers/AnAdaptiveExpeToBoostOnlineSkillsSignaling.pdf" class="download-link">Draft</a></p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Digital matching platforms promise to reduce frictions on the labor market by providing low-cost information on available positions and candidates. As such, they may form a welcome addition to the toolbox available to Public Employment Services to bridge labor supply and demand. However, there are certain challenges associated with their adoption. For instance, vulnerable populations may face difficulties in utilizing digital tools effectively. In this study, we evaluate the impact of a communication campaign by email designed to encourage the use of an online matching platform maintained by the French Public Employment Service, Pôle emploi. We designed several email templates that combined information, support or motivational content to encourage jobseekers to engage with their profiles on the platform. In order to discover email effectiveness we implement an adaptive experiment (contextual bandit) where the goal is to use past jobseekers take-up responses and characteristics to determine email allocation in the future, reducing gradually the allocation of less promising templates. Additionally, we built an optimal personalization allocation strategy based on collected data and test its effectiveness. Emails had a positive impact on the usage of the platform, as measured by a wide range of outcomes. However, attempts at learning a personalized emailing strategy did not manage to significantly improve on a random allocation of email templates.</p>
+</div>
+</div>
+</div>
+</li>
+</section></ul>
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
       } else {
-        e.name = "menu";
-        list.classList.remove('visible-menu');
-        list.classList.add('hidden-menu');
+        el.classList.add('notransition');
       }
-    }  </script>
-<script src="dist/accordion.js"></script>
-
-<script>
-    new Accordion('.accordion-container1');
-    new Accordion('.accordion-container2');
-</script>
-    <!-- More about accordion here: https://michu2k.github.io/Accordion/ -->
-
-<script>
-const boutonsToggle = document.querySelectorAll(".bouton-toggle");
-const contenusToggle = document.querySelectorAll(".contenu-toggle");
-
-boutonsToggle.forEach((boutonToggle, index) => {
-    boutonToggle.addEventListener("click", () => {
-        contenusToggle[index].style.maxHeight = contenusToggle[index].style.maxHeight ? null : contenusToggle[index].scrollHeight + "px";
-        boutonToggle.querySelector(".fleche").style.transform = contenusToggle[index].style.maxHeight ? "rotate(90deg)" : "rotate(0)";
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
     });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
 });
 </script>
+</div> <!-- /content -->
 
-    </body>
-</html>
+
+
+</body></html>
