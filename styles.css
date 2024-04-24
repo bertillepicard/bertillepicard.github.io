@@ -138,9 +138,20 @@ body.quarto-dark{
     margin: 0 auto; /* centre l'élément horizontalement */
 }
 
-body {
-    margin: 0% 10%; /* centre l'élément horizontalement */
+/* Pour les smartphones */
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 0% 0%; /* Centre l'élément horizontalement */
+    }
 }
+
+/* Pour les écrans plus grands, y compris les tablettes */
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 0% 10%; /* Centre l'élément horizontalement */
+    }
+}
+
 
 /* La#tabset-1-1-tab.nav-link.active{
     color: var(--colhlght)
