@@ -156,3 +156,7 @@ body.quarto-dark{
 /* La#tabset-1-1-tab.nav-link.active{
     color: var(--colhlght)
 } */
+a[id^="tabset-"].nav-link.active {
+    color: var(--colkeywords);
+}
+
