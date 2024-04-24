@@ -106,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <!-- BEGIN:HTML_ONLY -->
-<script data-src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+<script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 <!-- END:HTML_ONLY -->
 <p>Since 2022, I teach as a <b>Lecturer</b>:<br></p>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
@@ -127,7 +127,6 @@ Probability Theory
 <li>Independence, conditioning and Bayes’ rule <br></li>
 <li>Discrete and continuous random variables <br></li>
 </ul>
-<div id="to-observe-1">
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -168,8 +167,6 @@ Slides
 </div>
 </div>
 </div>
-</div>
-<div id="to-observe-2">
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -223,7 +220,6 @@ If the preview is not adapted to your screen or if you want to customize the gra
 </div>
 </div>
 </div>
-</div>
 <p>Since 2019, I have also been a <b>Teaching Assistant</b> in:</p>
 <div class="callout callout-style-simple callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
@@ -245,7 +241,6 @@ Introductory Econometrics
 <li>Instrumental variables <br></li>
 <li>Illustration using R</li>
 </ul>
-<div id="to-observe-3">
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -285,7 +280,6 @@ If the preview is not adapted to your screen or if you want to customize the gra
 </p>
 <iframe data-src="https://www.desmos.com/calculator/7tkug6uznw?embed" width="100%" height="500" frameborder="0">
 </iframe>
-</div>
 </div>
 </div>
 </div>
@@ -336,7 +330,6 @@ Mathematics
 <li>Lagrange function <br></li>
 <li>Implicit function theorem</li>
 </ul>
-<div id="to-observe-4">
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -381,7 +374,6 @@ If the preview is not adapted to your screen or if you want to customize the gra
 </div>
 </div>
 </div>
-</div>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -400,7 +392,6 @@ Probability Theory
 <li>Independence, conditioning and Bayes’ rule <br></li>
 <li>Discrete and continuous random variables</li>
 </ul>
-<div id="to-observe-5">
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -441,8 +432,6 @@ Slides
 </div>
 </div>
 </div>
-</div>
-<div id="to-observe-6">
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -496,7 +485,6 @@ If the preview is not adapted to your screen or if you want to customize the gra
 </div>
 </div>
 </div>
-</div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -533,23 +521,60 @@ if (screenWidth < 768) { // Small screens (e.g., tablets)
     desmosfontSize = 10;
 }
 </script>
-<script data-src="graphs/linreg.js"></script>
+<script src="graphs/linreg.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    var toObserveIds = ["to-observe-1", "to-observe-2", "to-observe-3", "to-observe-4", "to-observe-5", "to-observe-6"];
-    toObserveIds.forEach(function(id) {
-        var toObserve = document.getElementById(id);
-        if (toObserve) {
-            toObserve.addEventListener("click", function() {
-                var iframes = toObserve.querySelectorAll("iframe[data-src]");
-                iframes.forEach(function(iframe) {
-                    iframe.src = iframe.dataset.src;
-                });
+    // Sélectionner tous les éléments de navigation avec un ID correspondant au schéma tabset-X-X-tab
+    var navLinks = document.querySelectorAll('a[data-bs-toggle="tab"][id^="tabset"]');
+
+    // Fonction pour charger les iframes d'un tabset
+    function loadTabsetIframes(tabsetId) {
+        var tabPane = document.getElementById('tabset-' + tabsetId + '-1');
+        if (tabPane) {
+            var iframes = tabPane.querySelectorAll('iframe[data-src]');
+            iframes.forEach(function(iframe) {
+                var src = iframe.dataset.src;
+                if (src) {
+                    iframe.src = src;
+                }
             });
         }
+    }
+
+    // Charger les iframes des six premiers tabsets lors du chargement initial de la page
+    for (var i = 1; i <= 6; i++) {
+        loadTabsetIframes(i);
+    }
+
+    // Pour chaque élément de navigation
+    navLinks.forEach(function(navLink) {
+        // Ajouter un écouteur d'événements pour le changement d'état
+        navLink.addEventListener('shown.bs.tab', function(event) {
+            var targetId = event.target.getAttribute('aria-controls');
+            var targetPane = document.getElementById(targetId);
+            var iframes = targetPane.querySelectorAll('iframe');
+
+            // Charger les iframes lorsque l'élément de navigation est activé
+            iframes.forEach(function(iframe) {
+                var src = iframe.dataset.src;
+                if (src) {
+                    iframe.src = src;
+                }
+            });
+        });
+
+        navLink.addEventListener('hidden.bs.tab', function(event) {
+            var targetId = event.target.getAttribute('aria-controls');
+            var targetPane = document.getElementById(targetId);
+            var iframes = targetPane.querySelectorAll('iframe');
+
+            // Décharger les iframes lorsque l'élément de navigation devient inactif
+            iframes.forEach(function(iframe) {
+                iframe.src = '';
+            });
+        });
     });
 });
-
 </script>
 
 
