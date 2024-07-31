@@ -15,6 +15,16 @@ nav{
 }
 
 
+.about-entity {
+    display: flex;
+    align-items: center; /* Centre verticalement l'image */
+    justify-content: center; /* Centre horizontalement l'image (facultatif) */
+    height: 100%; /* Assurez-vous que l'élément parent a une hauteur définie */
+}
+
+
+
+
 /* Styles pour les boutons */
 .button {
     display: inline-block;
