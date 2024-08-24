@@ -29,7 +29,7 @@ nav{
 .button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #3498db; /* Couleur de fond du bouton */
+    background-color: #004555; /* Couleur de fond du bouton */
     color: #fff; /* Couleur du texte */
     font-size: 18px;
     border: none;
@@ -44,14 +44,6 @@ nav{
     background-color: #2074a0; /* New background color on hover */
     color: #fff; /* New text color on hover */
 }
-
-
-/* Style pour le lien de téléchargement */
-.download-link {
-    text-decoration: none;
-    color: #3498db; /* Couleur du texte du lien */
-}
-
 
 .button-container {
     display: grid;
@@ -86,7 +78,7 @@ nav{
 .paper-abstract {
     font-size: 16px;
     margin-top: 10px;
-    border-left: 2px solid #3498db;
+    border-left: 2px solid #004555;
     padding-left: 10px;
 }
 
@@ -96,13 +88,16 @@ nav{
 }
 
 .download-link {
+    padding: .4em .7em;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
     display: inline-block;
-    background-color: var(--colbutton);
-    padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
     margin-right: 2%;
+    text-decoration: none;
 }
 
 
@@ -119,15 +114,15 @@ nav{
 
 
 .navbar-dark{
-    background-color: #2b4b6f
+    background-color: #004555
 }
 
 body.quarto-light{
-    --colhlght: #a73421;
-    --colbox: #f9f9f9;
+    --colhlght: #B41B31;
+    --colbox: #fff;
     --colbutton: #fff;
-    --colauthor: #777;
-    --colkeywords: #777;
+    --colauthor: #62a37c;
+    --colkeywords: #4d2ea5;
 }
 
 body.quarto-dark{
@@ -167,6 +162,6 @@ body.quarto-dark{
     color: var(--colhlght)
 } */
 a[id^="tabset-"].nav-link.active {
-    color: var(--colkeywords);
+    color: var(--mermaid-fg-colo);
 }
 
