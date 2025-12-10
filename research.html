@@ -106,12 +106,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 <ul class="paper-list">
-<section id="working-paper" class="level1">
-<h1>Working Paper</h1>
+<section id="paper" class="level1">
+<h1>Paper</h1>
 <li class="paper-item">
-<h5 class="paper-title anchored" data-anchor-id="working-paper">
-Can a Website Bring Unemployment Down? Experimental Evidence from France
+<h5 class="paper-title anchored" data-anchor-id="paper">
+Can a Digital Job Search Coach Reduce Unemployment? Experimental Evidence from France
 </h5>
+<h6 class="anchored">
+Conditionally accepted at the <strong><em>Journal of Labor Economics</em></strong>
+</h6>
 <p class="paper-authors">
 Aïcha Ben Dhia, Bruno Crépon, Esther Mbih, Louise Paul-Delvaux, Bertille Picard, and Vincent Pons
 </p>
@@ -131,7 +134,7 @@ Abstract
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>We evaluate the impact of an online platform giving job seekers tips to improve their search and recommendations of new occupations and locations to target, based on their personal data and labor market data. Our experiment used an encouragement design and was conducted in collaboration with the French public employment agency. It includes 212,277 individuals. We find modest effects on search methods: the users of the platform adopt some of its tips and they are more likely to use resources provided by public employment services. However, following individual trajectories for 18 months after the intervention, we do not observe any impact on time spent looking for a job, search scope (occupational or geographical), or self-reported well-being. Most importantly, we do not find any effect on any employment outcome, whether in the short or medium run. We conclude that the enthusiasm around the potential for job-search assistance platforms to help reduce unemployment should be toned down.</p>
+<p>We evaluate the impact of Bob Emploi, a digital platform designed to provide personalized job search advice and coaching to the unemployed. The platform, developed by a nonprofit organization with access to France’s public employment agency data, aims to replicate traditional counseling services through automated tools. Our experiment included 212,277 individuals, with 56.3% randomly assigned to receive encouragement to use the platform. While our intervention increased Bob Emploi’s usage by 27 percentage points, the effects of the platform remained limited. Users made modest changes to their search methods, showed slightly higher engagement with standard employment services, and felt more supported in their search. However, we find no impact on time spent searching, occupational scope, or job seeker well-being. Most importantly, the platform did not improve any employment outcomes over an 18-month follow-up period, with precise null effects across all subgroups. These results suggest that digital job search assistance platforms may need to combine coaching with specific job recommendations to effectively improve job seekers’ labor market outcomes.</p>
 </div>
 </div>
 </div>
@@ -141,14 +144,15 @@ Abstract
 <h1>Work in progress</h1>
 <li class="paper-item">
 <h5 class="paper-title anchored" data-anchor-id="work-in-progress">
-Does Personalized Allocation Make Our Experimental Designs More Fair?
+Decomposing Inequalities using Machine Learning and Overcoming Common Support Issues
 </h5>
 <p class="paper-authors">
-Bertille Picard
+Emmanuel Flachaire, Bertille Picard
 </p>
 <p class="paper-keywords">
-<strong>Keywords</strong>: Fairness, Contextual bandits, Randomized controlled trials, Machine learning
+<strong>Keywords</strong>: Inequality, Oaxaca decomposition, Machine learning
 </p>
+<p><a href="https://arxiv.org/abs/2511.13433" class="download-link">Working Paper on arXiv</a></p>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -161,20 +165,20 @@ Abstract
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Algorithms can optimize treatment allocation within an experimental design. They can progressively identify the most beneficial treatment for the subjects and thus maximize the experiment’s overall impact. However, these designs raise concerns for experimentalists and policymakers because they involve transferring decision-making to an algorithm. Are adaptive experiments inherently fairer and thus a preferred choice over traditional randomized controlled trials? In this paper, I propose a comprehensive examination of fairness by considering multiple criteria that can influence the researchers’ preference for one design over the other: the possibility to increase the benefits of the experiment for the experimental subjects, the transparency of the decision rule, the absence of discrimination regarding the treatment allocation, the protection of individuals’ data. By summarizing and analyzing these distinct criteria through a utility model, I discuss the relative fairness of adaptive experiments and standard randomized controlled trials. Specifically, I show that these different designs align with extreme versions of the fairness utility model, reflecting the pursuit of distinct fairness objectives within experimental settings. I highlight intermediate solutions that can be pursued to reconcile and balance different fairness objectives in experimental designs.</p>
+<p>The Kitagawa-Oaxaca-Blinder decomposition splits the difference in means between two groups into an explained part, due to observable factors, and an unexplained part. In this paper, we reformulate this framework using potential outcomes, highlighting the critical role of the reference outcome. To address limitations like common support and model misspecification, we extend Neumark’s (1988) weighted reference approach with a doubly robust estimator. Using Neyman orthogonality and double machine learning, our method avoids trimming and extrapolation. This improves flexibility and robustness, as illustrated by two empirical applications.</p>
 </div>
 </div>
 </div>
 </li>
 <li class="paper-item">
 <h5 class="paper-title anchored">
-Decomposing Inequalities with Machine Learning: Should we Change the Reference Outcome?
+Does Personalized Allocation Make Our Experimental Designs More Fair?
 </h5>
 <p class="paper-authors">
-Emmanuel Flachaire, Bertille Picard
+Bertille Picard
 </p>
 <p class="paper-keywords">
-<strong>Keywords</strong>: Inequality, Oaxaca decomposition, Machine learning
+<strong>Keywords</strong>: Fairness, Contextual bandits, Randomized controlled trials, Machine learning
 </p>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
@@ -188,7 +192,7 @@ Abstract
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The Kitagawa-Oaxaca-Blinder decomposition is widely used in empirical studies to analyze changes in a distributional statistic between two groups or two periods. It separates an observed difference into an explained part due to individuals’ observed characteristics and an unexplained part. In this paper, the assumptions required to identify the different components of the aggregate decomposition are discussed, and two key hypotheses are discussed: the common support condition and the correct specification of a parametric linear model. This leads us to propose a decomposition method in a fully non-parametric framework.</p>
+<p>Algorithms can optimize treatment allocation within an experimental design. They can progressively identify the most beneficial treatment for the subjects and thus maximize the experiment’s overall impact. However, these designs raise concerns for experimentalists and policymakers because they involve transferring decision-making to an algorithm. Are adaptive experiments inherently fairer and thus a preferred choice over traditional randomized controlled trials? In this paper, I propose a comprehensive examination of fairness by considering multiple criteria that can influence the researchers’ preference for one design over the other: the possibility to increase the benefits of the experiment for the experimental subjects, the transparency of the decision rule, the absence of discrimination regarding the treatment allocation, the protection of individuals’ data. By summarizing and analyzing these distinct criteria through a utility model, I discuss the relative fairness of adaptive experiments and standard randomized controlled trials. Specifically, I show that these different designs align with extreme versions of the fairness utility model, reflecting the pursuit of distinct fairness objectives within experimental settings. I highlight intermediate solutions that can be pursued to reconcile and balance different fairness objectives in experimental designs.</p>
 </div>
 </div>
 </div>
