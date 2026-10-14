@@ -1,0 +1,21 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+$endif$
+<hr style="border-color: #f2bd89; opacity: 1; height: 10px;"> <!-- Barre horizontale -->
+<div class="grid-container">
+  <div class="grid-cell">
+    $for(author)$
+    <p>Bertille <span class="small-caps">Picard</span></p>
+    $endfor$ 
+    <p class="date">Le 15 avril 2025</p>
+  </div>
+  <div class="grid-cell">
+    <div class="institute">
+      <img src="Logo_ENSAI_2014.svg" width="40%">
+    </div>
+  </div>
+</div>
+
+</section>

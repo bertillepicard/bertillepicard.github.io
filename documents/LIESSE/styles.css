@@ -1,0 +1,167 @@
+/* metropolis-like.css */
+
+/* Mimic the colors and styles of the Metropolis theme */
+/* You may need to inspect the Metropolis theme's CSS to replicate its styles */
+/* Example styles (you'll need to adjust these to match Metropolis) */
+
+  /* Header styles */
+  h1 {
+    color: #23373b !important; /* Adjust to match Metropolis colors */
+    text-align: left; /* Align header text to the left */
+    padding-top: 15px;
+
+  }
+  
+  h2 {
+    color: #fafafa !important;
+    padding: 15px;
+    padding-left: 50%;
+    padding-bottom: 20px;
+    margin-bottom: 3% !important;
+    margin-left: -50% !important; /* Adjust the negative margin to achieve the desired width extension */
+    margin-right: -25% !important; /* Adjust the negative margin to achieve the desired width extension */
+    background-color: #23373b; 
+    width: 150%;
+  }
+  
+  
+  /* Header styles */
+  .subtitle {
+    font-size: 1.2em !important; /* Adjust font size and add !important */
+    color: #23373b !important; /* Adjust to match Metropolis colors */
+    text-align: left; /* Align header text to the left */
+    position: relative; /* Create a positioning context for pseudo-element */
+
+  }
+
+  hr {
+    border-top: 2px solid;
+    border-bottom: none; /* Supprime la bordure gauche si nécessaire */
+    border-right: none; /* Supprime la bordure gauche si nécessaire */
+    border-left: none; /* Supprime la bordure gauche si nécessaire */
+    /* Autres styles pour hr */
+  }
+
+  
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+ .reveal .progress {
+    background: rgba(235, 129, 27, .4); }
+
+.reveal .progress span {
+    background: rgba(235, 129, 27, 1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.grid-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns content to the left within each cell */
+}
+
+.author, .date, .institute {
+  text-align: left;
+}
+
+.small-caps, .callout-title {
+  font-variant: small-caps;
+}
+
+.callout-warning, .callout-tip, .callout-note {
+  font-size: 18pt !important;
+}
+
+/* CSS for instantaneous fade-out effect */
+.instant-fade-out {
+  opacity: 1; /* Initially fully visible */
+}
+
+/* When applying the fade-out effect */
+.instant-fade-out.fade-out {
+  opacity: 0; /* Instantly make the element transparent */
+  transition-duration: 0s !important; /* Override duration for instant disappearance */
+}
+
+/* CSS for instantaneous fade-out effect */
+.instant-fade-in {
+  opacity: 1; /* Initially fully visible */
+}
+
+/* When applying the fade-out effect */
+.instant-fade-in.fade-in {
+  opacity: 1; /* Instantly make the element transparent */
+  transition-duration: 0s !important; /* Override duration for instant disappearance */
+}
+
+
+
+/* CSS for instantaneous fade-out effect */
+.instant-fade-out2 {
+  opacity: 1; /* Initially fully visible */
+}
+
+/* When applying the fade-out effect */
+.instant-fade-out2.fade-out {
+  opacity: 0; /* Instantly make the element transparent */
+  transition-duration: 0s !important; /* Override duration for instant disappearance */
+}
+
+/* CSS for instantaneous fade-out effect */
+.instant-fade-in2 {
+  opacity: 1; /* Initially fully visible */
+}
+
+/* When applying the fade-out effect */
+.instant-fade-in2.fade-in {
+  opacity: 1; /* Instantly make the element transparent */
+  transition-duration: 0s !important; /* Override duration for instant disappearance */
+}
+
+blockquote {
+  color: #007991 !important; /* Change la couleur du texte dans les blockquotes */
+  border-left: 4px solid #007991 !important; /* Ajoute une bordure gauche pour les blockquotes, si désiré */
+  padding-left: 16px; /* Ajoute un peu d'espace à gauche du texte pour le rendre plus lisible */
+  margin: 16px 0; /* Ajoute de l'espace au-dessus et au-dessous des blockquotes */
+  font-style: italic; /* Facultatif : ajoute un style italique pour les blockquotes */
+}
+
+:root {
+  --r-link-color: #0f5f70 !important;
+  --r-link-color-hover: #007a8a !important;
+} 
+
+
+div.callout-note.callout-style-default .callout-title {
+  background-color: #56b5c24a !important;
+}
+
+body div.callout-note {
+  border-left-color: #2559606e !important;
+}
+
+div.hanging-indent.csl-entry {
+  font-size: 14pt;
+}
+
+.smaller-code {
+  font-size: 0.8em;  /* Adjust this value as needed */
+}
+
+.scrollable {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.center{
+  text-align: center
+}

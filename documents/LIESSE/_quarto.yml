@@ -1,0 +1,18 @@
+title: "Econométrie et Machine Learning"
+author: "Marion Goussé et Bertille Picard"
+date: "15 avril 2025"
+institute: "Ensai"
+
+format: 
+  revealjs:
+    template-partials:
+      - title-slide.html
+    css: styles.css
+    theme: [serif, custom.scss] #simple
+    fontsize: 18pt
+    margin: -0.005
+    padding: 1
+    bibliography: references.bib
+    footer: ""
+    callout-icon: false
+    code-fold: true
